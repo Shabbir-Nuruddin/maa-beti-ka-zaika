@@ -1,0 +1,111 @@
+import "@fontsource/kalam/700.css";
+import type { Site } from "./lib";
+
+export const SITE: Site = {
+  name: "Maa Beti Ka Zaika",
+  sub: { en: "Home food by a mother and daughter · Palam Vihar", hi: "मां-बेटी के हाथ का घर का खाना · पालम विहार" },
+  banner: { en: "Near Bajghera Chowk, opposite Downtown cafe · closed Sundays", hi: "बजघेड़ा चौक के पास, डाउनटाउन कैफ़े के सामने · रविवार बंद" },
+  phone: "918800339940",
+  phoneDisplay: "+91 88003 39940",
+  lat: 28.5091225,
+  lon: 77.0254729,
+  hours: [[10, 10], [10, 22], [10, 22], [10, 22], [10, 22], [10, 22], [10, 22]],
+  theme: {
+    dark: false,
+    bg: "#ffffff",
+    bg2: "#fcf0f5",
+    panel: "#ffffff",
+    ink: "#220d17",
+    ink2: "#5a4350",
+    ink3: "#937d89",
+    line: "#f0dce6",
+    accent: "#be185d",
+    onAccent: "#ffffff",
+    display: "Kalam",
+    weight: 700,
+    upper: false,
+  },
+  scene: "cup",
+  align: "left",
+  hero: {
+    title: [
+      { en: "Swaad aisa ki", hi: "स्वाद ऐसा कि" },
+      { en: "ghar ki yaad aa jaye.", hi: "घर की याद आ जाए।" },
+    ],
+    proof: {
+      en: "4.9 on Google from 61 reviews. Parathas, poori aloo and daily lunch boxes, cooked home-style by a mother and her daughter in New Palam Vihar.",
+      hi: "गूगल पर 61 रिव्यू से 4.9। पराठे, पूरी आलू और रोज़ का लंच बॉक्स, न्यू पालम विहार में मां और बेटी के हाथ से घर जैसा बना।",
+    },
+    fallback: "/img/p1.jpg",
+    slides: ["/img/p1.jpg", "/img/p3.jpg", "/img/p7.jpg"],
+  },
+  marquee: ["Ghar Ka Khana", "Aloo Paratha", "Poori Aloo", "Lunch Box", "Today's Special", "Not Oily", "Reasonable Prices"],
+  dishes: {
+    title: { en: "Like it's made at home", hi: "जैसे घर में बना हो" },
+    body: { en: "Real Google reviews, word for word.", hi: "असली गूगल रिव्यू, शब्दशः।" },
+    layout: "cards",
+    items: [
+      { name: { en: "Parathas", hi: "पराठे" }, quote: "Pure desi home cooked food tastes very good, it reminds me of home after eating it.", img: "/img/p5.jpg" },
+      { name: { en: "Poori Aloo", hi: "पूरी आलू" }, quote: "Maa Beti Ka Zaika is absolutely amazing, I have been eating here for the past one month and I highly recommend it.", img: "/img/p8.jpg" },
+      { name: { en: "Lunch box", hi: "लंच बॉक्स" }, quote: "We ordered the good at home. It was really good and tasty. Not spicy and oily but flavourful. The prices are quite reasonable.", img: "/img/p7.jpg" },
+    ],
+  },
+  gallery: {
+    title: { en: "Today's specials", hi: "आज का स्पेशल" },
+    layout: "mosaic",
+    photos: [
+      { src: "/img/p3.jpg", alt: "Paratha with butter", wide: true },
+      { src: "/img/p10.jpg", alt: "Today's special poster" },
+      { src: "/img/p12.jpg", alt: "Today's special thali poster" },
+      { src: "/img/p11.jpg", alt: "Ghar ka khana poster" },
+      { src: "/img/p14.jpg", alt: "Aloo paratha poster" },
+      { src: "/img/p13.jpg", alt: "Today's special rice and dal poster", wide: true },
+    ],
+  },
+  feature: {
+    kind: "hosts",
+    title: { en: "Maa and beti, in the kitchen", hi: "रसोई में मां और बेटी" },
+    body: { en: "A mother and daughter run the kitchen. Here's what guests say.", hi: "रसोई मां और बेटी संभालती हैं। मेहमान क्या कहते हैं, पढ़िए।" },
+    img: "/img/p6.jpg",
+    hosts: [
+      { name: "Aunty & her daughter", quote: "You guys will absolutely love this home food made by the cutest aunty and her daughter, do visit if you really want to have Ghar ka khana❤️🧿" },
+      { name: "The duo", quote: "The mother-daughter duo cooks very tasty delicious 😋 food . Maja aa jata hai" },
+      { name: "Tastes like home", quote: "The food is very good and the nature of both mother and daughter is also good. Tastes like home." },
+    ],
+  },
+  reviews: {
+    title: { en: "59 of 61 reviews are five stars", hi: "61 में से 59 रिव्यू पांच स्टार" },
+    rating: 4.9,
+    dist: [59, 0, 1, 0, 1],
+    quotes: [
+      { quote: "if you are looking for Ghar Jaisa Food, Maa Beti ka Zaika is good at reasonable price.", stars: 5 },
+      { quote: "The quality of the food was excellent—fresh, flavorful, and well-prepared.", stars: 5 },
+    ],
+  },
+  visit: {
+    title: { en: "By Bajghera Chowk", hi: "बजघेड़ा चौक के पास" },
+    img: "/img/p4.jpg",
+    alt: "Maa Beti Ka Zaika shopfront",
+    address: { en: "Near Bajghera Chowk, opposite Downtown cafe, Choma, Block B, New Palam Vihar Phase 1, Sector 110, Gurugram 122017", hi: "बजघेड़ा चौक के पास, डाउनटाउन कैफ़े के सामने, चोमा, ब्लॉक B, न्यू पालम विहार फ़ेज़ 1, सेक्टर 110, गुरुग्राम 122017" },
+    note: { en: "10 AM to 10 PM, Monday to Saturday. Closed Sunday.", hi: "सोमवार से शनिवार सुबह 10 से रात 10 तक। रविवार बंद।" },
+  },
+  build: {
+    title: { en: "Order ghar ka khana", hi: "घर का खाना ऑर्डर कीजिए" },
+    body: { en: "Tap what you'd like, how many of you and when. It goes to WhatsApp exactly as you see it.", hi: "क्या चाहिए, कितने लोग और कब, टैप करें। मैसेज व्हाट्सऐप पर ठीक ऐसे ही जाएगा।" },
+    items: [
+      { en: "Aloo Paratha", hi: "आलू पराठा" },
+      { en: "Paratha", hi: "पराठा" },
+      { en: "Poori Aloo", hi: "पूरी आलू" },
+      { en: "Lunch Box", hi: "लंच बॉक्स" },
+      { en: "Today's Special", hi: "आज का स्पेशल" },
+    ],
+    people: true,
+    when: true,
+    hello: { en: "Namaste Maa Beti Ka Zaika, I'd like:", hi: "नमस्ते मां बेटी का ज़ायका, मुझे चाहिए:" },
+  },
+  waHello: {
+    en: "Namaste Maa Beti Ka Zaika, I'd like to order. Items: , people: , time: ",
+    hi: "नमस्ते मां बेटी का ज़ायका, मुझे ऑर्डर देना है। आइटम: , लोग: , समय: ",
+  },
+  order: ["feature", "dishes", "build", "gallery", "reviews", "visit"],
+};
